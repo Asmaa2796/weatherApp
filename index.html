@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#222" />
+    <link rel="shortcut icon" href="images/clear.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
+</head>
+<body>
+    
+    <!-- card -->
+    <div class="card">
+        <!-- search -->
+        <div class="search">
+            <input type="text" spellcheck="false" class="enterCity" placeholder="Enter city name">
+            <button><img src="images/search.png" alt="" class="searchBtn"></button>
+        </div>
+        <!-- weather -->
+        <div class="weather">
+            <img src="images/clear.gif" class="weather-icon" alt="">
+            <h1 class="temp">22°c</h1>
+            <small class="wStatus">Clear</small>
+            <h1 class="city">New York</h1>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15Km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- sound effects -->
+    <audio controls class="rain sounds" autoplay loop>
+        <source src="RainandWind1.wav" type="audio/wav">
+    </audio>
+    <audio controls class="thunder sounds" autoplay loop>
+        <source src="thunder.mp3" type="audio/mp3">
+    </audio>
+    <audio controls class="mist sounds" autoplay loop>
+        <source src="mist.mp3" type="audio/mp3">
+    </audio>
+    <audio controls class="snow sounds" autoplay loop>
+        <source src="snow.mp3" type="audio/mp3">
+    </audio>
+    <audio controls class="clear sounds" autoplay loop>
+        <source src="clear.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="copyright">All rights reserved &copy; 2023 Asmaa Saad</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
