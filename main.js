@@ -16,7 +16,7 @@ searchBtn.addEventListener("click", search);
 
 // Fetch API
 async function weather(city) {
-  const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+  const response = await fetch(apiUrl + city + `&appid=${apiKey}&units=metric`);
   var data = await response.json();
   console.log(data);
 
